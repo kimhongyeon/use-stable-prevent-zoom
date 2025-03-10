@@ -1,0 +1,53 @@
+{
+  "name": "@kimhongyeon/use-stable-prevent-zoom",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint --fix ./src"
+  },
+  "keywords": [
+    "next.js",
+    "react",
+    "hook",
+    "prevent-zoom",
+    "ios",
+    "viewport",
+    "input-focus"
+  ],
+  "author": "kimhongyeon",
+  "license": "MIT",
+  "description": "A lightweight, zero-dependency React hook that safely prevents unwanted viewport zoom on input focus, restoring zoom levels smoothly on blur. Ideal for better UX on iOS.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kimhongyeon/use-stable-prevent-zoom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kimhongyeon/use-stable-prevent-zoom/issues"
+  },
+  "homepage": "https://github.com/kimhongyeon/use-stable-prevent-zoom#readme",
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/react": "^19.0.10",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "react": "^19.0.0",
+    "rollup": "^4.35.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1"
+  }
+}
