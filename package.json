@@ -28,7 +28,7 @@
   "description": "A lightweight, zero-dependency React hook that safely prevents unwanted viewport zoom on input focus, restoring zoom levels smoothly on blur. Ideal for better UX on iOS.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kimhongyeon/use-stable-prevent-zoom.git"
+    "url": "git+https://github.com/kimhongyeon/use-stable-prevent-zoom.git"
   },
   "bugs": {
     "url": "https://github.com/kimhongyeon/use-stable-prevent-zoom/issues"
