@@ -20,7 +20,7 @@ import React, { useState } from 'react';
 import { useStablePreventZoom } from '@kimhongyeon/use-stable-prevent-zoom';
 
 const App = () => {
-  useStablePreventZoom(isLocked);
+  useStablePreventZoom();
   
   return <>...</>;
 };
