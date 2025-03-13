@@ -15,7 +15,7 @@ const useStablePreventZoom = () => {
     const handleTouchStart = (event: TouchEvent) => {
       const target = event.target as HTMLElement;
 
-      if (originalViewport && tagNames.indexOf(target.tagName) > -1 && target.isContentEditable) {
+      if (originalViewport && (tagNames.indexOf(target.tagName) > -1 || target.isContentEditable)) {
         getMetaViewport()?.setAttribute('content', `${originalViewport}, maximum-scale=1.0, user-scalable=0`);
       }
     };
@@ -23,7 +23,7 @@ const useStablePreventZoom = () => {
     const handleBlur = (event: FocusEvent) => {
       const target = event.target as HTMLElement;
 
-      if (originalViewport && tagNames.indexOf(target.tagName) > -1 && target.isContentEditable) {
+      if (originalViewport && (tagNames.indexOf(target.tagName) > -1 || target.isContentEditable)) {
         getMetaViewport()?.setAttribute('content', originalViewport);
       }
     };
@@ -38,8 +38,8 @@ const useStablePreventZoom = () => {
       if (originalViewport) {
         getMetaViewport()?.setAttribute('content', originalViewport);
       }
-    }
+    };
   });
-}
+};
 
 export default useStablePreventZoom;
