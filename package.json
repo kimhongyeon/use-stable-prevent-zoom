@@ -1,6 +1,6 @@
 {
   "name": "@kimhongyeon/use-stable-prevent-zoom",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "type": "module",
   "main": "dist/index.cjs.js",
@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "lint": "eslint --fix ./src"
+    "lint": "eslint --fix ./src",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "next.js",
